@@ -12,15 +12,30 @@
     
     <form action=""> <!--Chamar a página JavaScript aqui.-->
     <fieldset>
-        <legend><strong>Detalhes de contato</strong></legend>
-        Digite o seu nome: <input type="text" name="nome"> <br>
-        Digite o seu sobrenome: <input type="text" name="sobrenome"> <br>
-        Digite o seu e-mail: <input type="text" name="email"> <br>
+        <legend>Detalhes de contato</legend>
+        <div>
+        <label for="nome">Digite o seu nome:</label>
+         <input type="text" name="nome" id="nome"> <br>
+        </div>
+        <div>
+        <label for="sobrenome">Digite o seu sobrenome:</label>
+         <input type="text" name="sobrenome" id="sobrenome"> <br>
+        </div>
+        <div>
+        <label for="email"> Digite o seu e-mail: </label>
+        <input type="text" name="email" id="email"> <br>
+        </div>
     </fieldset>
     <fieldset>
-        <legend><strong>Dados de login:</strong></legend>
-        Digite sua senha: <input type="password" name="senha"> <br>
-        Confirme sua senha: <input type="password" name="confirmaSenha"> <br>
+        <legend>Dados de login</legend>
+        <div>
+        <label for="senha">Digite sua senha: </label>
+        <input type="password" name="senha" id="senha"> <br>
+        </div>
+        <div>
+        <label for="confirmaSenha">Confirme sua senha: </label>
+        <input type="password" name="confirmaSenha" id="confirmaSenha"> <br>
+        </div>
         <input type="submit" value="Entrar">
     </fieldset>
 
