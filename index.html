@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
     <h2>Login</h2>
-    <form>
-        Digite seu nome: <input type="text" name="nome"> <br>
-        Digite seu sobrenome: <input type="text" name="sobrenome"> <br>
-        Digite seu email: <input type="text" name="email"> <br>
-        Digite sua senha: <input type="password" name="senha"> <br>
+    
+    <form action=""> <!--Chamar a página JavaScript aqui.-->
+    <fieldset>
+        <legend>Digite o seu nome completo</legend>
+        Nome: <input type="text" name="nome"> <br>
+        Sobrenome: <input type="text" name="sobrenome"> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Digite seus dados de login:</legend>
+        Email: <input type="text" name="email"> <br>
+        Senha: <input type="password" name="senha"> <br>
         Confirme sua senha: <input type="password" name="confirmaSenha"> <br>
         <input type="submit" value="Entrar">
+    </fieldset>
 
     </form>
 
