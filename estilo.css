@@ -6,10 +6,35 @@ body{
 
 #container {
     width: 400px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.3);
+    height: 600px;
+    background-color: rgba(219, 156, 255, 0.2);
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 240px;
+    text-align: center;
 }
+#container img {
+    width: 120px;
+    height: 110px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+input {
+    height: 30px;
+    width: 80%;
+    background-color: rgb(233, 215, 255);
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    border:none;
+    background-repeat: no-repeat;
+}
+input.submit{
+    color: mediumslateblue;
+    background-color:mediumslateblue;
+    border :2px solidcolor;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
 
+}
