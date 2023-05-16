@@ -6,5 +6,6 @@ var botaoEntrar = document.getElementById("botao");
 var inputSenha = document.getElementById("senha");
 var inputConfSenha = document.getElementById("confirmaSenha");
 
-
-
+botaoEntrar.addEventListener("click", ()=>{
+    
+});
