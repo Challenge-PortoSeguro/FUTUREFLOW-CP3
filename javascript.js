@@ -1,16 +1,16 @@
+function verifSenha(){
 
+    var inputSenha = document.getElementById("senha");
+    var inputConfSenha = document.getElementById("confirmaSenha");
 
-
-//Verificação de confirmação de Senha
-var botaoEntrar = document.getElementById("botao");
-var inputSenha = document.getElementById("senha");
-var inputConfSenha = document.getElementById("confirmaSenha");
-
-botaoEntrar.addEventListener("click", ()=>{
-    if(inputSenha.value == inputConfSenha.value){
-        alert("Senha Validada!!!");
+    if(inputSenha.value == "" && inputConfSenha.value == ""){
+        alert("Digite uma senha!");
+    }
+    else if(inputSenha.value == inputConfSenha.value){
+        alert("Senha Verificada!")
     }
     else{
-        alert("Senha Não Compatível!!!");
+        alert("Senha Não Compatível!");
     }
-});
+}
+
