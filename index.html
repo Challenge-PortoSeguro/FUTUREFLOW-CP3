@@ -14,17 +14,17 @@
         <img src="imagens/icone-usuario.png" alt="imagem de login">
         <h2>Login</h2>
         
-        <form action=""> <!--Chamar a página JavaScript aqui.-->
+        <form action="" method="get"> <!--Chamar a página JavaScript aqui.-->
             <fieldset>
                 <legend><strong>Detalhes de contato </strong></legend> 
                 <div class="input-field">
                     <input type="text" name="nome" id="nome" placeholder="Digite o seu nome: ">
                 </div>
                 <div class="input-field">
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder = "Digite o seu sobrenome: "> <br>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder = "Digite o seu sobrenome:">
                 </div>
                 <div class="input-field">
-                    <input type="email" name="email" id="email" placeholder="Digite o seu e-mail: ">
+                    <input type="email" name="email" id="email" placeholder="Digite o seu e-mail:">
                 </div>
             </fieldset>
             <fieldset>
@@ -33,10 +33,11 @@
                     <input type="password" name="senha" id="senha" placeholder="Digite sua senha: ">    
                 </div>
                 <div class="input-field">
-                    <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme sua senha: ">
+                    <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme sua senha:">
+                    <span id="confSenha"></span>
                 </div>
             </fieldset>
-            <input class="btnEntrar" type="submit" value="Entrar">
+            <input class="btnEntrar" id="botao" type="submit" value="Entrar">
         </form>
     </div>
 
