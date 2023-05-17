@@ -1,40 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    background: #643d87 url(../FUTUREFLOW-CP3/imagens/fundo.jpg) no-repeat top
-}
-
-
-#container {
-    width: 400px;
-    height: 600px;
-    background-color: rgba(219, 156, 255, 0.2);
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 240px;
-    text-align: center;
-}
-#container img {
-    width: 120px;
-    height: 110px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-input {
-    height: 30px;
-    width: 80%;
-    background-color: rgb(233, 215, 255);
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-left: 40px;
-    border:none;
+    background-image: url(/imagens/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-input.submit{
-    color: mediumslateblue;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 530px;
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.227);
+    border-radius: 10px;
+}
+
+.container img {
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+fieldset{
+    width: 300px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.input-field{
+    width: 100%;
+    height: 40px;
+}
+
+
+input{
+    height: 35px;
+    width: 100%;
+    /* background-color: rgb(233, 215, 255); */
+    font-size: 15px;
+    border:none;
+    border-radius: 6px;
+    padding-left: 6px;
+    transition: all .3s;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.624);
+}
+input:focus{
+    outline: none;
+    transform: scale(1.01);
+    transition: all .3s;
+    border: 1px solid purple;
+}
+input:focus::placeholder{
+    font-size: 16px;
+    transition: all .3s;
+}
+
+
+.btnEntrar{
+    color: rgb(255, 255, 255);
     background-color:mediumslateblue;
-    border :2px solidcolor;
-    padding: 5px 20px;
-    height: 45px;
-    width: 90%;
+    height: 35px;
+    width: 80%;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btnEntrar:hover{
+    letter-spacing: 1px;
+    transform: scale(1.02);
+    transition: all .3s;
 
 }

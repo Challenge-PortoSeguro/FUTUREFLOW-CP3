@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
+    <script src="./javascript.js" defer></script>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-    <div id="container">
-    <img src="imagens/icone-usuario.png">
-    <h2>Login</h2>
-    
-    <form action=""> <!--Chamar a página JavaScript aqui.-->
-    <fieldset>
-        <legend><strong>Detalhes de contato </strong></legend> 
-        <div>
-         <input type="text" name="nome" id="nome" placeholder="Digite o seu nome: "> <br>
-        </div>
-        <div>
-        <input type="text" name="sobrenome" id="sobrenome" placeholder = "Digite o seu sobrenome: "> <br>
-        </div>
-        <div>
-        <input type="text" name="email" id="email" placeholder="Digite o seu e-mail: "> <br>
-        </div>
-    </fieldset>
-    <fieldset>
-        <legend><strong>Dados de login</strong></legend>
-        <div>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha: "> <br>
-        </div>
-        <div>
-        <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme sua senha: "> <br>
-        </div>
-        <input class type="submit" value="Entrar">
-    </fieldset>
-    
 
-    </form>
+    <div class="container">
+        <img src="imagens/icone-usuario.png" alt="imagem de login">
+        <h2>Login</h2>
+        
+        <form action="" method="get"> <!--Chamar a página JavaScript aqui.-->
+            <fieldset>
+                <legend><strong>INFORMAÇÕES DO USUÁRIO</strong></legend> 
+                <div class="input-field">
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome: ">
+                </div>
+                <div class="input-field">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder = "Digite o seu sobrenome:">
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" id="email" placeholder="Digite o seu e-mail:">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>SENHA</strong></legend>
+                <div class="input-field">
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha: ">    
+                </div>
+                <div class="input-field">
+                    <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme sua senha:">
+                    <span id="confSenha"></span>
+                </div>
+            </fieldset>
+            <input class="btnEntrar" id="botao" type="submit" value="Entrar" onclick="verifSenha()">
+        </form>
     </div>
 
-    
 </body>
 </html>
