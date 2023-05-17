@@ -1,7 +1,12 @@
 //VALIDAR NOME
 var firstName = document.getElementById("nome");
 function validNome(){
-    
+    if(firstName.value != ""){
+        
+    }
+    else{
+        alert("Preencha o nome!")
+    }
 };
 
 
