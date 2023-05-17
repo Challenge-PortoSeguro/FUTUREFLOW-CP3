@@ -5,7 +5,12 @@ function verifSenha(){
 
     if(inputSenha.value != "" && inputConfSenha.value != ""){
         if(inputSenha.value.length > 5 && inputConfSenha.value.length > 5){
-            
+            if(inputSenha.value == inputConfSenha.value){
+                alert("Senha Verificada!")
+            }
+            else{
+                alert("Senhas Diferentes!");
+            }
         }
         else{
             alert("Senha com menos de 6 caracteres!");
