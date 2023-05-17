@@ -1,3 +1,13 @@
+//VALIDAR NOME
+var firstName = document.getElementById("nome");
+
+
+
+
+
+
+// VALIDAR SENHA E CONFIRMAR SENHA
+
 var inputSenha = document.getElementById("senha");
 var inputConfSenha = document.getElementById("confirmaSenha");
 inputSenha.setAttribute('maxlength', '8');
