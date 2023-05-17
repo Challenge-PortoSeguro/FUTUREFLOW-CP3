@@ -2,7 +2,12 @@
 var firstName = document.getElementById("nome");
 function validNome(){
     if(firstName.value != ""){
-        
+        if(firstName.value.length <= 5){
+            alert("Nome precisa ter mais de 5 caracteres!");
+        }
+        else{
+            alert("Nome Salvo!");
+        }
     }
     else{
         alert("Preencha o nome!")
