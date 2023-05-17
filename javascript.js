@@ -1,6 +1,8 @@
 //VALIDAR NOME
 var firstName = document.getElementById("nome");
-
+function validNome(){
+    
+};
 
 
 
