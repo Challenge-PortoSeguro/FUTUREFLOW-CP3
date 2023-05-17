@@ -4,11 +4,18 @@ function verifSenha(){
     var inputConfSenha = document.getElementById("confirmaSenha");
 
     if(inputSenha.value != "" && inputConfSenha.value != ""){
+
         if(inputSenha.value.length > 5 && inputConfSenha.value.length > 5){
-            if(inputSenha.value == inputConfSenha.value){
-                alert("Senha Verificada!")
+
+            if(inputSenha.value.length > 8 || inputConfSenha.value.length > 8){
+                inputSenha.setAttribute("maxlength", 8);
+                inputConfSenha.setAttribute("maxlength", 8);
+                alert("Senha com mais de 8 caracteres!");
             }
-            else{
+            else if(inputSenha.value.length <= 8 && inputSenha.value == inputConfSenha.value){
+                alert("Senha Cadastrada com Sucesso!")
+            }
+            else if(inputSenha.value != inputConfSenha.value){
                 alert("Senhas Diferentes!");
             }
         }
