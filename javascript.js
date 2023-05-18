@@ -17,7 +17,12 @@ function validNome(){
 var lastName = document.getElementById("sobrenome");
 function validSobrenome(){
     if(lastName.value != ""){
-        
+        if(lastName.value.length <= 5){
+            alert("Sobrenome precisa ter mais de 5 caracteres!");
+        }
+        else{
+            alert("Sobrenome Salvo!");
+        }
     }
     else{
         alert("Preencha o Sobrenome!")
