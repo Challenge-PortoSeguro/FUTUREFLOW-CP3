@@ -14,6 +14,8 @@ function validNome(){
     }
 };
 
+
+//VALIDAÇÃO DE SOBRONOME
 var lastName = document.getElementById("sobrenome");
 function validSobrenome(){
     if(lastName.value != ""){
