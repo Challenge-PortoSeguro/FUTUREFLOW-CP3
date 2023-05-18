@@ -15,7 +15,9 @@ function validNome(){
 };
 
 var lastName = document.getElementById("sobrenome");
-
+function validSobrenome(){
+    
+};
 
 
 
