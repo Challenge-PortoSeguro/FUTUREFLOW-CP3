@@ -16,7 +16,12 @@ function validNome(){
 
 var lastName = document.getElementById("sobrenome");
 function validSobrenome(){
-    
+    if(lastName.value != ""){
+        
+    }
+    else{
+        alert("Preencha o Sobrenome!")
+    }
 };
 
 
