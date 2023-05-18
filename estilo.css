@@ -39,6 +39,10 @@ body{
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.container h2{
+    margin-bottom: 15px;
+}
+
 
 form{
     display: flex;
@@ -52,6 +56,19 @@ fieldset{
     border: 1px solid #fff;
     text-align: center;
     padding: 10px;
+}
+.field1{
+    margin-bottom: 20px;
+}
+
+legend{
+    color: #000;
+    text-shadow: 
+            -1px -1px 0px rgb(170, 170, 170), 
+            -1px 1px 0px #FFF,      
+            1px -1px 0px #FFF,    
+            1px 0px 0px #FFF;
+    text-decoration: underline;
 }
 
 

@@ -1,3 +1,42 @@
+//VALIDAR NOME
+var firstName = document.getElementById("nome");
+function validNome(){
+    if(firstName.value != ""){
+        if(firstName.value.length <= 5){
+            alert("Nome precisa ter mais de 5 caracteres!");
+        }
+        else{
+            alert("Nome Salvo!");
+        }
+    }
+    else{
+        alert("Preencha o nome!")
+    }
+};
+
+
+//VALIDAÇÃO DE SOBRONOME
+var lastName = document.getElementById("sobrenome");
+function validSobrenome(){
+    if(lastName.value != ""){
+        if(lastName.value.length <= 5){
+            alert("Sobrenome precisa ter mais de 5 caracteres!");
+        }
+        else{
+            alert("Sobrenome Salvo!");
+        }
+    }
+    else{
+        alert("Preencha o Sobrenome!")
+    }
+};
+
+
+
+
+
+// VALIDAR SENHA E CONFIRMAR SENHA
+
 var inputSenha = document.getElementById("senha");
 var inputConfSenha = document.getElementById("confirmaSenha");
 inputSenha.setAttribute('maxlength', '8');

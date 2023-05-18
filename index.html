@@ -15,19 +15,19 @@
         <h2>Login</h2>
         
         <form action="" method="get"> <!--Chamar a página JavaScript aqui.-->
-            <fieldset>
+            <fieldset class="field1">
                 <legend><strong>INFORMAÇÕES DO USUÁRIO</strong></legend> 
                 <div class="input-field">
-                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome: ">
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome:" onmousedown="validNome()">
                 </div>
                 <div class="input-field">
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder = "Digite o seu sobrenome:">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder = "Digite o seu sobrenome:" onmousedown="validSobrenome()">
                 </div>
                 <div class="input-field">
                     <input type="email" name="email" id="email" placeholder="Digite o seu e-mail:">
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="field2">
                 <legend><strong>SENHA</strong></legend>
                 <div class="input-field">
                     <input type="password" name="senha" id="senha" placeholder="Digite sua senha: ">    
