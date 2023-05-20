@@ -39,7 +39,12 @@ function validEmail(){
 
     if(inputEmail.value != "")
     {
-        
+        if(inputEmail.value.length >= 5){
+            
+        }
+        else{
+            alert("Email menor que 5 caracteres");
+        }
     }
     else{
         alert("Email Nulo!");
