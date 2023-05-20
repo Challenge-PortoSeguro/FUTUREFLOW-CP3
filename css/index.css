@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background: rgb(37,0,7);
+    background: linear-gradient(180deg, rgba(37,0,7,1) 0%, rgba(122,0,0,1) 47%, rgba(147,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 200px;
+}
+
+.container img{
+    width: 250px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+fieldset input{
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    transition: all .3s;
+}
+fieldset input::placeholder{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+fieldset input:hover{
+    transform: scale(1.02);
+    transition: all .3s;
+}
+fieldset input:hover::placeholder{
+    color: white;
+    font-size: 16px;
+    transition: all .4s;
+}
+
+.btnEntrar{
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+}
+.btnEntrar:hover{
+    color: white;
+    transition: all .5s;
+}
