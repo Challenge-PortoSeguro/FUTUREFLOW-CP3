@@ -15,7 +15,7 @@ function validNome(){
 };
 
 
-//VALIDAÇÃO DE SOBRONOME
+//VALIDAÇÃO DE SOBRENOME
 var lastName = document.getElementById("sobrenome");
 function validSobrenome(){
     if(lastName.value != ""){
@@ -34,9 +34,27 @@ function validSobrenome(){
 
 
 
+function validEmail(){
+    const inputEmail = document.getElementById("email");
+
+    if(inputEmail.value != "")
+    {
+        if(inputEmail.value.length >= 5){
+            
+        }
+        else{
+            alert("Email menor que 5 caracteres");
+        }
+    }
+    else{
+        alert("Email Nulo!");
+    }
+
+}
+
+
 
 // VALIDAR SENHA E CONFIRMAR SENHA
-
 var inputSenha = document.getElementById("senha");
 var inputConfSenha = document.getElementById("confirmaSenha");
 inputSenha.setAttribute('maxlength', '8');
