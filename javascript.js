@@ -15,7 +15,7 @@ function validNome(){
 };
 
 
-//VALIDAÇÃO DE SOBRONOME
+//VALIDAÇÃO DE SOBRENOME
 var lastName = document.getElementById("sobrenome");
 function validSobrenome(){
     if(lastName.value != ""){
@@ -34,9 +34,13 @@ function validSobrenome(){
 
 
 
+function validEmail(){
+    
+}
+
+
 
 // VALIDAR SENHA E CONFIRMAR SENHA
-
 var inputSenha = document.getElementById("senha");
 var inputConfSenha = document.getElementById("confirmaSenha");
 inputSenha.setAttribute('maxlength', '8');
