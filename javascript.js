@@ -37,7 +37,13 @@ function validSobrenome(){
 function validEmail(){
     const inputEmail = document.getElementById("email");
 
-    
+    if(inputEmail.value != "")
+    {
+        
+    }
+    else{
+        alert("Email Nulo!");
+    }
 
 }
 
