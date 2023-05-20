@@ -35,7 +35,10 @@ function validSobrenome(){
 
 
 function validEmail(){
+    const inputEmail = document.getElementById("email");
+
     
+
 }
 
 
