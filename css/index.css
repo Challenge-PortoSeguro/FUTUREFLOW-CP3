@@ -6,14 +6,13 @@
 
 body{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-   
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.container{
+.form{
     display: flex;
     flex-direction: column;
     margin: 0px 200px;
@@ -76,6 +75,12 @@ fieldset input:hover::placeholder{
 .dark-mode > .container > form > fieldset > input::placeholder{
     color: rgb(255, 255, 255);
     font-size: 15px;
+}
+
+
+.sun-button{
+    margin-bottom: 30%;
+    margin-left: 300%;
 }
 
 
