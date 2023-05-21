@@ -64,7 +64,7 @@ fieldset input:hover::placeholder{
 }
 
 .btnEntrar{
-    background-color: rgb(255, 85, 0);
+    background-color: rgb(253, 110, 38);
     border: none;
     border-radius: 5px;
     color: black;
@@ -84,6 +84,12 @@ fieldset input:hover::placeholder{
 .dark-mode > .container > form > fieldset > input::placeholder{
     color: rgb(255, 255, 255);
     font-size: 15px;
+}
+
+.dark-mode > .container{
+    background-color: rgb(67, 67, 67);
+    border-radius: 50px;
+    padding: 0% 5% 1% 5%;
 }
 
 .dark-mode > .container > form > fieldset > input:hover::placeholder{
