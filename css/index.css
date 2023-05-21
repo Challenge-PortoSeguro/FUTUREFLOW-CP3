@@ -6,8 +6,7 @@
 
 body{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    background: rgb(37,0,7);
-    background: linear-gradient(180deg, rgba(37,0,7,1) 0%, rgba(122,0,0,1) 47%, rgba(147,0,0,1) 100%);
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +37,7 @@ fieldset input{
     height: 40px;
     outline: none;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid brown;
     background-color: transparent;
     transition: all .3s;
 }
@@ -52,7 +51,7 @@ fieldset input:hover{
     transition: all .3s;
 }
 fieldset input:hover::placeholder{
-    color: white;
+    color: rgb(255, 19, 19);
     font-size: 16px;
     transition: all .4s;
 }
