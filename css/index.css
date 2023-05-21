@@ -18,8 +18,16 @@ body{
     margin: 0px 200px;
 }
 
+.container{
+    background-color: rgb(222, 222, 222);
+    border-radius: 50px;
+    padding: 0% 5% 1% 5%;
+}
+
 .container img{
     width: 250px;
+    margin-bottom: 20%;
+    margin-top: -20%;
 }
 
 fieldset{
@@ -56,11 +64,12 @@ fieldset input:hover::placeholder{
 }
 
 .btnEntrar{
-    background-color: brown;
+    background-color: rgb(255, 85, 0);
     border: none;
     border-radius: 5px;
     color: black;
     font-size: 20px;
+    margin-top: 10%;
 }
 .btnEntrar:hover{
     color: white;
@@ -77,10 +86,22 @@ fieldset input:hover::placeholder{
     font-size: 15px;
 }
 
+.dark-mode > .container > form > fieldset > input:hover::placeholder{
+    color: rgb(255, 19, 19);
+    font-size: 16px;
+    transition: all .4s;
+}
+
 
 .sun-button{
     margin-bottom: 30%;
     margin-left: 300%;
+    width: 30%;
+    align-items: center;
 }
+
+
+
+
 
 
