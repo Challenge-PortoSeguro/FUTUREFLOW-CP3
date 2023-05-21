@@ -6,22 +6,28 @@
 
 body{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    background: rgb(37,0,7);
-    background: linear-gradient(180deg, rgba(37,0,7,1) 0%, rgba(122,0,0,1) 47%, rgba(147,0,0,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.container{
+.form{
     display: flex;
     flex-direction: column;
     margin: 0px 200px;
 }
 
+.container{
+    background-color: rgb(222, 222, 222);
+    border-radius: 50px;
+    padding: 0% 5% 1% 5%;
+}
+
 .container img{
     width: 250px;
+    margin-bottom: 20%;
+    margin-top: -20%;
 }
 
 fieldset{
@@ -38,7 +44,7 @@ fieldset input{
     height: 40px;
     outline: none;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid brown;
     background-color: transparent;
     transition: all .3s;
 }
@@ -52,19 +58,56 @@ fieldset input:hover{
     transition: all .3s;
 }
 fieldset input:hover::placeholder{
-    color: white;
+    color: rgb(255, 19, 19);
     font-size: 16px;
     transition: all .4s;
 }
 
 .btnEntrar{
-    background-color: brown;
+    background-color: rgb(253, 110, 38);
     border: none;
     border-radius: 5px;
     color: black;
     font-size: 20px;
+    margin-top: 10%;
 }
 .btnEntrar:hover{
     color: white;
     transition: all .5s;
 }
+
+.dark-mode{
+    color: white;
+    background-color: rgb(84, 83, 83);
+}
+
+.dark-mode > .container > form > fieldset > input::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.dark-mode > .container{
+    background-color: rgb(67, 67, 67);
+    border-radius: 50px;
+    padding: 0% 5% 1% 5%;
+}
+
+.dark-mode > .container > form > fieldset > input:hover::placeholder{
+    color: rgb(255, 19, 19);
+    font-size: 16px;
+    transition: all .4s;
+}
+
+
+.sun-button{
+    margin-bottom: 30%;
+    margin-left: 300%;
+    width: 30%;
+    align-items: center;
+}
+
+
+
+
+
+
