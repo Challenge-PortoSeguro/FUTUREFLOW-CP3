@@ -47,16 +47,18 @@ inputSenha.setAttribute('maxlength', '8');
 inputConfSenha.setAttribute('maxlength', '8');
 
 function verifSenha(password){
-    if(password > 5){
-        if(inputSenha.value == inputConfSenha.value){
-            alert("Senha Cadastrada com Sucesso!");
+    if(password > 0) {
+        if(password > 5){
+            if(inputSenha.value == inputConfSenha.value){
+                alert("Senha Cadastrada com Sucesso!");
+            }
+            else{
+                alert("Senhas Diferentes!");
+            }
         }
         else{
-            alert("Senhas Diferentes!");
+            alert("Senha com menos de 6 caracteres!");
         }
-    }
-    else{
-        alert("Senha com menos de 6 caracteres!");
     }
 }
 
