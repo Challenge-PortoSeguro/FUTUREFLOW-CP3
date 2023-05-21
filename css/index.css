@@ -67,3 +67,9 @@ fieldset input:hover::placeholder{
     color: white;
     transition: all .5s;
 }
+
+.dark-mode{
+    color: white;
+    background-color: rgb(84, 83, 83);
+}
+
