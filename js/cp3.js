@@ -61,4 +61,7 @@ function verifSenha(password){
 }
 
 function offMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
 }
