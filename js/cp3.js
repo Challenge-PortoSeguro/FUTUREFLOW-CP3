@@ -59,3 +59,6 @@ function verifSenha(password){
         alert("Senha com menos de 6 caracteres!");
     }
 }
+
+function offMode() {
+}
