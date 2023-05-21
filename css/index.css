@@ -73,3 +73,9 @@ fieldset input:hover::placeholder{
     background-color: rgb(84, 83, 83);
 }
 
+.dark-mode > .container > form > fieldset > input::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+
